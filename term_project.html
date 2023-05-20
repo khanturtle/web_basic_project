@@ -1,0 +1,1586 @@
+<html lang="ko" class="os_mac">
+
+<head>
+  <meta charset="utf-8">
+  <title>masterpiece</title>
+  <link rel="stylesheet" type="text/css"
+href="//t1.daumcdn.net/media/kraken/movie/386a1cd/PcCommonCssBundle.merged.css">
+  <script src="//t1.daumcdn.net/media/kraken/movie/386a1cd/common.merged.js"></script>
+  <script src="//t1.daumcdn.net/media/kraken/movie/386a1cd/PcCommonScriptBundle.merged.js"></script>
+  <script src="//t1.daumcdn.net/cssjs/movie/v2/amchart/amcharts.js"></script>
+  <script src="//t1.daumcdn.net/cssjs/movie/v2/amchart/serial.js"></script>
+
+ 
+  <script type="text/javascript" charset="utf-8" async=""
+    src="https://t1.daumcdn.net/daumtop_deco/scripts/minidaum/pc/minidaum_pc-f9abc14.min.js"></script>
+  <style>
+    /* minidaum common */
+    #wrapMinidaum {
+      z-index: 999999;
+      height: 40px;
+      font-size: 12px;
+      line-height: 1.5;
+      font-family: AppleSDGothicNeo-Regular, '돋움', dotum, sans-serif;
+      color: #222;
+      text-align: left
+    }
+
+    #minidaum ol,
+    #minidaum ul,
+    #minidaum li {
+      list-style: none
+    }
+
+    #minidaum img,
+    #minidaum fieldset {
+      border: 0;
+      padding: 0
+    }
+
+    #minidaum img {
+      vertical-align: top
+    }
+
+    #minidaum p {
+      margin: 0;
+      padding: 0
+    }
+
+    #minidaum a {
+      font-family: AppleSDGothicNeo-Regular, '돋움', dotum, sans-serif;
+      color: #222;
+      text-decoration: none
+    }
+
+    #minidaum a:active,
+    #minidaum a:hover {
+      text-decoration: underline
+    }
+
+    #minidaum em {
+      font-style: normal
+    }
+
+    #wrapMinidaum .screen_out {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      font-size: 0;
+      line-height: 0;
+      text-indent: -9999px
+    }
+
+    #wrapMinidaum .hide {
+      display: none
+    }
+
+    #minidaum {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      letter-spacing: -1px
+    }
+
+    #minidaum .img_minidaum {
+      display: block;
+      overflow: hidden;
+      font-size: 0;
+      line-height: 0;
+      background: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat;
+      text-indent: -9999px
+    }
+
+    #minidaum .minidaum_gnb {
+      float: right;
+      margin-right: -3px;
+      padding-top: 8px
+    }
+
+    #minidaum .minidaum_logo {
+      display: inline;
+      float: left;
+      margin: 11px 12px 0 0
+    }
+
+    #minidaum .minidaum_logo .img_logo {
+      display: block;
+      overflow: hidden;
+      width: 42px;
+      height: 17px;
+      background: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat;
+      text-indent: -9999px
+    }
+
+    .minidaum_rank_list {
+      background: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat 0 -200px
+    }
+
+    .minidaum_rank_list .minidaum_word {
+      float: left;
+      white-space: nowrap
+    }
+
+    .minidaum_rank_list .minidaum_num {
+      font-size: 12px;
+      line-height: 14px;
+      color: #666;
+      letter-spacing: 0
+    }
+
+    .minidaum_rank_list .minidaum_status {
+      float: left;
+      overflow: hidden;
+      width: 8px;
+      height: 10px;
+      font-size: 0;
+      background: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat -100% 0;
+      text-indent: -3000px
+    }
+
+    .minidaum_rank_list .minidaum_up {
+      margin-top: 3px;
+      background-position: 0 -80px
+    }
+
+    .minidaum_rank_list .minidaum_down {
+      margin-top: 2px;
+      background-position: -10px -80px
+    }
+
+    .minidaum_rank_list .minidaum_keep {
+      height: 1px;
+      margin-top: 5px;
+      background-position: -20px -80px
+    }
+
+    .minidaum_rank_list .minidaum_new {
+      width: 25px;
+      margin-top: 2px;
+      background-position: -30px -80px
+    }
+
+    .minidaum_rank_list .minidaum_dummy {
+      background: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/minidaum_v5.png) no-repeat 0 -490px
+    }
+
+    #minidaumRank {
+      float: left;
+      position: relative;
+      margin-top: 13px;
+      height: 19px
+    }
+
+    #minidaumRank .minidaum_rankroll {
+      overflow: hidden;
+      width: 191px;
+      height: 19px;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -1px
+    }
+
+    #minidaumRank .minidaum_rank_list {
+      float: left;
+      width: 191px;
+      background-position: 0 -490px
+    }
+
+    #minidaumRank .minidaum_rank_list li {
+      height: 23px
+    }
+
+    #minidaumRank .minidaum_rank_list .minidaum_word {
+      padding: 1px 6px 0 18px
+    }
+
+    #minidaumRank .minidaum_rank_list .minidaum_num {
+      display: inline;
+      float: left;
+      margin: 1px 0 0 2px
+    }
+
+    #minidaumRank .minidaum_rank_list .minidaum_up {
+      margin-top: 2px
+    }
+
+    #minidaumRank .minidaum_rank_list .minidaum_down {
+      margin-top: 1px
+    }
+
+    #minidaumRank .minidaum_rank_list .minidaum_keep {
+      margin-top: 6px
+    }
+
+    #minidaumUser {
+      float: left
+    }
+
+    #minidaumUser .minidaum_profile {
+      display: block;
+      overflow: hidden
+    }
+
+    #minidaumUser .minidaum_login {
+      display: block;
+      width: 50px;
+      height: 22px;
+      border: 1px solid #E4E4E4;
+      font-size: 12px;
+      line-height: 24px;
+      color: #666;
+      text-align: center
+    }
+
+    #minidaumUser .minidaum_login:hover {
+      text-decoration: none
+    }
+
+    #minidaumUser .minidaum_nick {
+      display: block
+    }
+
+    #minidaumUser .minidaum_nick .minidaum_profile {
+      position: relative;
+      width: 24px;
+      height: 24px
+    }
+
+    #minidaumService {
+      float: left
+    }
+
+    #minidaumService .dsvc_util {
+      display: inline;
+      float: left;
+      margin-left: 24px
+    }
+
+    #minidaumService .minidaum_mail {
+      display: block;
+      position: relative;
+      width: 24px;
+      height: 24px
+    }
+
+    #minidaumService .minidaum_mail .ico_dsvc_mail {
+      width: 24px;
+      height: 24px;
+      background-position: 0 -20px
+    }
+
+    #minidaumService .minidaum_mail:hover .ico_dsvc_mail {
+      background-position: -60px -20px
+    }
+
+    #minidaumService .ico_dsvc_alarm {
+      position: absolute;
+      top: -1px;
+      right: -3px;
+      width: 10px;
+      height: 10px;
+      background-position: -90px -80px;
+      pointer-events: none
+    }
+
+    #minidaumService .minidaum_count {
+      display: none;
+      position: absolute;
+      top: -3px;
+      left: 12px
+    }
+
+    #minidaumService #minidaumMailCnt {
+      display: block;
+      min-width: 15px;
+      width: auto;
+      height: auto;
+      padding: 3px 2px 1px 1px;
+      border-radius: 8px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 10px;
+      color: #fff;
+      background-color: #118EFF;
+      text-align: center;
+      letter-spacing: 0;
+      text-decoration: none
+    }
+
+    #minidaumService #minidaumMailCnt.mailcnt2 {
+      min-width: 21px;
+      padding-right: 1px;
+      padding-left: 2px
+    }
+
+    #minidaumService #minidaumMailCnt:empty {
+      display: none
+    }
+
+    #minidaumService .minidaum_sitemap {
+      display: block;
+      width: 24px;
+      height: 24px
+    }
+
+    #minidaumService .ico_dsvc_sitemap {
+      width: 24px;
+      height: 24px;
+      background-position: -30px -20px
+    }
+
+    #minidaumService .minidaum_sitemap:hover .ico_dsvc_sitemap:hover {
+      background-position: -90px -20px
+    }
+
+    #minidaum .minidaum_layer {
+      display: none;
+      position: absolute;
+      top: 34px;
+      padding-top: 5px
+    }
+
+    #minidaum .minidaum_layer .ico_arrow {
+      position: absolute;
+      top: 0;
+      width: 10px;
+      height: 6px;
+      background-position: -60px -80px
+    }
+
+    #minidaum .inner_minidaum_layer {
+      overflow: hidden;
+      border: 1px solid #CDCDCD;
+      border-radius: 1px;
+      background-color: #fff
+    }
+
+    #minidaum .minidaumlayer_open {
+      display: block
+    }
+
+    #minidaumRankLayer {
+      left: 0;
+      width: 222px
+    }
+
+    #minidaumRankLayer .ico_arrow {
+      left: 57px
+    }
+
+    #minidaumRankLayer .inner_minidaum_layer {
+      height: 342px;
+      padding: 0 20px 0 19px
+    }
+
+    #minidaumRankLayer .minidaum_rank_tit {
+      display: block;
+      height: 30px;
+      margin: 20px 0 0 2px;
+      font-weight: bold;
+      font-size: 14px
+    }
+
+    #minidaumRankLayer li {
+      overflow: hidden;
+      height: 23px;
+      margin-top: 5px;
+      font-size: 13px;
+      line-height: 14px
+    }
+
+    #minidaumRankLayer .minidaum_word {
+      width: 133px;
+      padding: 1px 0 0 18px
+    }
+
+    #minidaumRankLayer .minidaum_dummy {
+      display: none
+    }
+
+    #minidaumRankLayer .minidaum_num {
+      float: right;
+      width: 21px;
+      margin-top: 2px;
+      text-align: right
+    }
+
+    #minidaumRankLayer .minidaum_select .minidaum_word {
+      font-weight: bold;
+      letter-spacing: -1px
+    }
+
+    #minidaumRankLayer .minidaum_keep {
+      display: inline;
+      float: right;
+      margin: 8px 1px 0 0
+    }
+
+    #minidaumRankLayer .minidaum_new {
+      float: right;
+      margin-top: 2px
+    }
+
+    #minidaumMoreLayer {
+      right: 0;
+      width: 312px
+    }
+
+    #minidaumMoreLayer .ico_arrow {
+      right: 4px
+    }
+
+    #minidaumMoreLayer .minidaum_idx {
+      display: none
+    }
+
+    #minidaumMoreLayer .minidaum_list_dsvc {
+      overflow: hidden;
+      padding: 23px 0 0 2px
+    }
+
+    #minidaumMoreLayer .minidaum_list_dsvc li {
+      float: left;
+      width: 74px;
+      height: 74px;
+      margin-right: 1px;
+      text-align: center
+    }
+
+    #minidaumMoreLayer .minidaum_list_dsvc a {
+      display: block
+    }
+
+    #minidaumMoreLayer .minidaum_list_dsvc img {
+      vertical-align: top
+    }
+
+    #minidaumMoreLayer .dsvc_thumb {
+      display: block;
+      overflow: hidden;
+      width: 36px;
+      height: 36px;
+      margin: 0 auto
+    }
+
+    #minidaumMoreLayer .dsvc_txt {
+      display: block;
+      margin-top: 6px;
+      font-weight: bold;
+      font-size: 13px
+    }
+
+    #minidaumMoreLayer .minidaum_listbox {
+      display: table;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding: 18px 0 58px;
+      border-top: 1px solid #F2F2F2
+    }
+
+    #minidaumMoreLayer .minidaum_list_group {
+      display: table-cell;
+      width: 72px;
+      border-left: 1px solid #F2F2F2
+    }
+
+    #minidaumMoreLayer .minidaum_list_group li {
+      margin-bottom: -2px;
+      padding: 13px 0 0 10px;
+      font-size: 13px;
+      line-height: 15px
+    }
+
+    #minidaumMoreLayer .minidaum_list_group li:first-child {
+      padding-top: 0
+    }
+
+    #minidaumMoreLayer .minidaum_list_group .minidaum_all {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      margin: 0;
+      padding: 14px 0 11px;
+      border-top: 1px solid #F2F2F2;
+      font-size: 12px;
+      line-height: 14px;
+      color: #222;
+      background-color: #FBFBFB;
+      text-align: center;
+      text-decoration: none
+    }
+
+    #minidaumMoreLayer .minidaum_list_group1 {
+      width: 69px;
+      padding-left: 12px;
+      border-left: 0 none
+    }
+
+    #minidaumMoreLayer .minidaum_list_group4 {
+      width: auto
+    }
+
+    #minidaumMailLayer {
+      right: 0;
+      width: 312px
+    }
+
+    #minidaumMailLayer .ico_arrow {
+      right: 52px
+    }
+
+    #minidaumMailLayer .inner_minidaum_layer {
+      height: 238px;
+      text-align: center
+    }
+
+    #minidaumMailLayer .ico_dsvc_notify {
+      width: 70px;
+      height: 64px;
+      margin: 37px auto 0;
+      padding-left: 10px;
+      background-position: 10px -130px
+    }
+
+    #minidaumMailLayer .minidaum_notify {
+      margin: 11px 0 17px;
+      font-size: 13px;
+      line-height: 22px;
+      color: #666
+    }
+
+    #minidaumMailLayer .minidaum_notify em {
+      font-size: 14px;
+      color: #222
+    }
+
+    #minidaumMailLayer .minidaum_account {
+      display: block;
+      width: 138px;
+      margin: 0 auto;
+      padding: 10px 0 8px;
+      border: 1px solid #CDCDCD;
+      border-radius: 2px;
+      line-height: 1;
+      color: #666;
+      text-align: center;
+      text-decoration: none
+    }
+
+    #minidaumUserLayer {
+      right: 0
+    }
+
+    #minidaumUserLayer .ico_arrow {
+      right: 100px
+    }
+
+    #minidaumUserLayer .inner_minidaum_layer {
+      width: 310px;
+      height: 138px
+    }
+
+    #minidaumUserLayer .minidaum_mysvc {
+      overflow: hidden;
+      border-top: 1px solid #eee;
+      background-color: #FBFBFB
+    }
+
+    #minidaumUserLayer .minidaum_mysvc li {
+      float: left;
+      width: 33.3333%;
+      padding: 12px 0 11px;
+      line-height: 13px;
+      text-align: center
+    }
+
+    #minidaumUserLayer .minidaum_mysvc li:before {
+      float: left;
+      width: 1px;
+      height: 13px;
+      margin-left: -1px;
+      background-color: #eee;
+      content: ''
+    }
+
+    #minidaumUserLayer .minidaum_logout {
+      position: absolute;
+      top: 73px;
+      left: 103px;
+      color: #888;
+      text-decoration: underline;
+      letter-spacing: -1px
+    }
+
+    #minidaumUserLayer .minidaum_myinfo {
+      height: 84px;
+      padding: 17px 0 0 20px
+    }
+
+    #minidaumUserLayer .minidaum_myprof {
+      float: left;
+      position: relative;
+      max-width: 190px;
+      margin-top: 3px;
+      padding-left: 82px;
+      vertical-align: top
+    }
+
+    #minidaumUserLayer .minidaum_ssoing .minidaum_myprof {
+      max-width: 122px
+    }
+
+    #minidaumUserLayer .minidaum_profile {
+      position: absolute;
+      top: -1px;
+      left: 1px;
+      width: 66px;
+      height: 66px
+    }
+
+    #minidaumUserLayer .minidaum_user {
+      display: block;
+      overflow: hidden;
+      padding-right: 1px;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 19px;
+      letter-spacing: -1px;
+      white-space: nowrap;
+      text-overflow: ellipsis
+    }
+
+    #minidaumUserLayer .minidaum_account {
+      overflow: hidden;
+      position: absolute;
+      top: 25px;
+      left: 82px;
+      max-width: 204px;
+      font-size: 13px;
+      line-height: 15px;
+      color: #666;
+      letter-spacing: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis
+    }
+
+    #minidaumUserLayer .minidaum_sso {
+      display: inline-block;
+      width: 70px;
+      height: 22px;
+      margin-left: 5px;
+      background-position: 0 -100px;
+      vertical-align: top
+    }
+
+    #minidaumUserLayer .minidaum_kakaoid {
+      position: absolute;
+      top: 44px;
+      left: 46px;
+      width: 24px;
+      height: 24px;
+      background-position: -80px -100px
+    }
+
+    /* 플래시가 미니다음 레이어들을 가릴 때 */
+    #minidaum .minidaum_shield {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1
+    }
+
+    #minidaum .minidaumlayer_open .minidaum_shield {
+      border: 1px solid #fff
+    }
+
+    /* 레티나 대응 이미지 */
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5),
+    only screen and (min-resolution: 144dpi),
+    only screen and (min-resolution: 1.5dppx) {
+
+      #minidaum .img_minidaum,
+      #minidaum .minidaum_logo .img_logo,
+      .minidaum_rank_list,
+      .minidaum_rank_list .minidaum_dummy,
+      .minidaum_rank_list .minidaum_status {
+        background-image: url(https://t1.daumcdn.net/daumtop_deco/images/common/minidaum/rtn/minidaum_v5.png);
+        background-size: 120px 960px
+      }
+    }
+
+    h4 {
+      color:rgb(247, 61, 147);
+      font-size: 20px;
+    }
+   
+    h3 {
+      text-align: center;
+      font-size: 40px;
+      color: rgb(22, 0, 59);
+      font-family: Times, Times New Roman, Georgia, serif;
+    }
+    p1{
+      text-align: center;
+      font-size: 25px;
+      color: rgb(65, 63, 66);
+      font-family: Times, Times New Roman, Georgia, serif;
+    }
+
+    body{
+      background-color: dimgray;
+    }
+
+    footer{
+      background-color: dimgray;
+    }
+    #searchButton {
+            height: 30px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        
+        #movieList {
+            margin-top: 20px;
+        }
+        #searchForm {
+            margin-top: 20px;
+        }
+        
+        #searchInput {
+            width: 300px;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px;
+        }
+
+        #movieList2 {
+          margin-top: 20px;
+        }
+        .movieItem {
+          margin-bottom: 10px;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            text-align: left;
+        }
+  </style>
+</head>
+
+
+<body class="">
+  <div class="direct-link">
+  </div>
+  <div class="kakao_wrap">
+    <header class="kakao_head" data-tiara-layer="gnb">
+      <div class="kakaohead_top">
+        <div class="inner_head" data-tiara-layer="service">
+
+
+         
+          <h4>masterpiece</h4>
+           
+
+
+        </div>
+      </div>
+
+      <div id="wrapMinidaum">
+        <div id="minidaum">
+          <div class="minidaum_gnb">
+            <div id="minidaumService">
+              <div class="dsvc_util">
+                <div id="minidaumMailLayer" class="minidaum_layer">
+                  <div class="inner_minidaum_layer"><span class="img_minidaum ico_dsvc_notify"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="dsvc_util">
+                <div id="minidaumMoreLayer" class="minidaum_layer">
+                  <div class="inner_minidaum_layer">
+                    <div class="minidaum_listbox">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        var minidaum_options = {
+          // background 타입 지정 관련 옵션. default: white.
+          bgType: "white", // white, dark, custom(no background)
+
+
+          // logout 시 return url 변경 여부 flag : default: false - 다음탑으로 이동
+          enableLogoutRetun: true, // false - 다음탑으로 이동, true - 현재페이지 혹은 returnUrl 값으로 이동
+          returnUrl: '', // default - 현재페이지(window.location.href)
+
+
+          // 실시간 이슈 사용 여부, default: false
+          disableHotissue: true, // false일 경우 사용, true일 경우 미사용
+
+          // 로고 사용 여부, default: false
+          disableLogo: true, // false일 경우 사용, true일 경우 미사용
+
+          // 티아라 사용 여부, default: false
+          disableTracker: false, // false일 경우 사용, true일 경우 미사용
+
+          // 플래시에 의한 레이어 가림 현상 방지 사용 여부, default: false
+          enableShield: false // false일 경우 미사용, true일 경우 사용
+        }
+      </script>
+      <script src="https://go.daum.net/minidaum_pc.daum" charset="utf-8" type="text/javascript"></script>
+
+
+
+      <div class="kakaohead_menu">
+        <div class="inner_head">
+          <nav id="gnbContent" class="gnb_movie">
+
+            <h3>20 Movies</h3>
+            <p1>To See Before You Die</p1>
+           
+          <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="영화 제목을 입력하세요">
+            <button type="submit" id="searchButton">검색</button>
+          </form>
+
+        <div id="movieList"></div>
+    </nav>
+        <script>
+            const searchForm = document.querySelector('#searchForm');
+            const searchInput = document.querySelector('#searchInput');
+            const movieList = document.querySelector('#movieList');
+            
+            searchForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const searchTerm = searchInput.value;
+                searchMovies(searchTerm);
+            });
+            
+            function searchMovies(searchTerm) {
+            const apiKey = '2c8382e12bde03ff132d5929d0cbc637'; 
+            const url = `http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=${apiKey}&movieNm=${encodeURIComponent(searchTerm)}`;
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const movies = data.movieListResult.movieList;
+                    showMovieResults(movies);
+                })
+                .catch(error => {
+                    console.log('API 요청에 실패했습니다.', error);
+                });
+        }
+        
+        // 검색 결과를 팝업창으로 표시하는 함수
+        function showMovieResults(movies) {
+            const popup = window.open('', 'Movie Results', 'width=500,height=400');
+            popup.document.write('<h1>검색 결과</h1>');
+            if (movies.length > 0) {
+                popup.document.write('<ul>');
+                movies.forEach(movie => {
+                    popup.document.write(`<li>${movie.movieNm}<br>
+                                             개봉일 : ${movie.openDt}</li>`);
+                });
+                popup.document.write('</ul>');
+            } else {
+                popup.document.write('<p>검색 결과가 없습니다.</p>');
+            }
+        }
+        </script>
+
+<div id="movieList2"></div>
+
+<script>
+    const movieList2 = document.querySelector('#movieList2');
+    
+    function getYesterday() {
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const year = yesterday.getFullYear();
+        const month = String(yesterday.getMonth() + 1).padStart(2, '0');
+        const day = String(yesterday.getDate()).padStart(2, '0');
+        return `${year}${month}${day}`;
+    }
+    
+    // 영화 순위
+    function showMovieRanking() {
+            const yesterday = getYesterday();
+            const apiKey = '2c8382e12bde03ff132d5929d0cbc637'; // 영화 진흥원 API 키를 입력하세요
+            const url = `http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${apiKey}&targetDt=${yesterday}`;
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const movies = data.boxOfficeResult.dailyBoxOfficeList;
+                    movies.forEach(movie => {
+                        const movieItem = document.createElement('div');
+                        movieItem.classList.add('movieItem');
+                        movieItem.textContent = `${movie.rank}. ${movie.movieNm}`;
+                        movieItem.addEventListener('click', () => {
+                            const bookingUrl = getBookingUrl(movie.movieCd);
+                            window.open(bookingUrl, '_blank');
+                        });
+                        movieList.appendChild(movieItem);
+                    });
+                })
+                .catch(error => {
+                    console.log('API 요청에 실패했습니다.', error);
+                });
+        }
+    
+    function getBookingUrl(movieCd) {
+        return `https://www.cgv.co.kr/reserve/show-times/?midx=${movieCd}`;
+    }
+    
+    showMovieRanking();
+</script>
+        
+</div>
+      
+</div>
+
+    </header>
+   
+
+    <main class="kakao_content">
+      <article id="mainContent" class="kakao_article">
+        <div class="section_ranking" data-tiara-layer="list">
+          <div class="head_section">
+            <div class="item_date">
+              <div class="inner_item">
+              </div>
+            </div>
+            <div class="util_head">
+              <div class="util_calendar">
+                <div class="calendar_layer">
+                  <div class="inner_layer">
+                    <div class="layer_head">
+                     
+                    </div>
+                    <div class="layer_body">
+                      <div class="set_calendar">
+                        <div class="area_calendar">
+                         
+                        </div>
+                        <button type="button" class="btn_move btn_prev">
+                          <span class="ico_movie">이전</span>
+                        </button>
+                        <button type="button" class="btn_move btn_next">
+                          <span class="ico_movie">다음</span>
+                        </button>
+                      </div>
+                    </div>
+                    <a href="#none" class="btn_close"><span class="ico_movie">닫기</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box_boxoffice">
+            <ol class="list_movieranking">
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/ko/3/32/쇼생크탈출_재개봉_포스터.jpg"
+                        class="img_thumb" alt="쇼생크 탈출">
+                      <span class="rank_num">1</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see15">15세이상관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=129156" class="link_story">
+                        촉망 받던 은행 부지점장 ‘앤디(팀 로빈슨 分)’는 아내와 그 애인을 살해한 혐의로 종신형을 받고 쇼생크 교도소에 수감된다. 강력범들이 수감된 이곳에서 재소자들은 짐승 취급 당하고, 혹여 간수 눈에 잘못 보였다가는 개죽음 당하기 십상이다. 처음엔 적응 못하던 ‘앤디’는 교도소 내 모든 물건을 구해주는 ‘레드(모건 프리먼 分)’와 친해지며 교도소 생활에 적응하려 하지만, 악질 재소자에게 걸려 강간까지 당한다. 그러던 어느 날, 간수장의 세금 면제를 도와주며 간수들의 비공식 회계사로 일하게 되고, 마침내는 소장의 검은 돈까지 관리해주게 된다. 덕분에 교도소 내 도서관을 열 수 있게 되었을 무렵, 신참내기 ‘토미(길 벨로우스 分)’로부터 ‘앤디’의 무죄를 입증할 기회를 얻지만, 노튼 소장은 ‘앤디’를 독방에 가두고 ‘토미’를 무참히 죽여버리는데...
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=129156" class="link_txt">쇼생크 탈출</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1995.01.28</span></span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://t1.daumcdn.net/cfile/11135E254BCC10F21C"
+                        class="img_thumb" alt="대부">
+                      <span class="rank_num">2</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see19">청소년 관람불가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=154241" class="link_story">
+                        1947년 돈 코를레오네(Vito Corleone: 말론 브란도 분)의 호화 저택에서는 막내딸 코니(Connie Corleone Rizzi: 탈리아 샤이어 분)와 카를로(Carlo Rizzi: 지아니 루소 분)와의 초호화판 결혼식이 거행되고 있다. 시실리아에서의 이민과 모진 고생 끝에 미국 암흑가의 보스로 군림하는 마피아의 두목 돈 코를레오네. 재력과 조직력을 동원, 갖가지 고민을 호소하는 사람들의 문제를 해결해, 사람들은 그를 ‘대부(代父)’라 부른다. 돈 코를레오네는 9세때 그의 고향인 시실리아에서 가족 모두가 살해 당하고 오직 그만 살아남아 미국으로 도피하여 밑바닥 범죄 세계를 경험하면서 확고한 기반을 다지게 된다. 부모의 복수를 위해 시실리로 돌아와 조직적 범죄를 통해 비약적인 성공을 거두게 된다. 그러던 어느날 돈 코를레오네의 라이벌인 탓타리아 패밀리의 마약 밀매인 소롯소(Sollozzo: 알 레티어리 분)가 돈 코를레오네를 저격, 중상을 입히는데...
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=154241" class="link_txt">대부</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1973.09.01</span></span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://play-lh.googleusercontent.com/5ApgwKo_GwEtc5khfQFFe2iJnoIPtsMF1dEhn49rQn27pJK7DVgT4v9MyKMEO4xfKxKR"
+                        class="img_thumb" alt="다크나이트">
+                      <span class="rank_num">3</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see15">15세이상관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=135762" class="link_story">
+                        정의로운 지방 검사 ‘하비 덴트’, ‘짐 고든’ 반장과 함께 범죄 소탕 작전을 펼치며 범죄와 부패로 들끓는 고담시를 지켜나가는 ‘배트맨’ 그러던 어느 날, 살아남기 위해 발버둥치던 범죄 조직은 배트맨을 제거하기 위해 광기어린 악당 ‘조커’를 끌어들이고 정체를 알 수 없는 조커의 등장에 고담시 전체가 깊은 혼돈 속으로 빠져든다. 급기야 배트맨을 향한 강한 집착을 드러낸 조커는 그가 시민들 앞에 정체를 밝힐 때까지 매일 새로운 사람들을 죽이겠다 선포하고 배트맨은 사상 최악의 악당 조커를 막기 위해 자신의 모든 것을 내던진 마지막 대결을 준비한다.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=135762" class="link_txt">다크나이트</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">2008.08.06</span></span>
+                   
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://t1.daumcdn.net/cfile/tistory/19038F104BACC9E55C"
+                        class="img_thumb" alt="대부2">
+                      <span class="rank_num">4</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see19">청소년 관람불가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=159863" class="link_story">
+                        대부(The Godfather) 비토 안도리니(Vito Andolini)는 시칠리(Sicilly)섬의 꼴레오네(Corleone)라는 마을에서 태어났다. 1901년, 그의 아버지는 이 지방의 마피아(Mafia) 두목을 모욕했다고 해서 살해되었다. 형 파올로(Paolo)는 아버지의 복수를 결심하고 산 속으로 들어가 버려서 비토가 상주로서 어머니와 함께 아버지의 상례를 치루었다. 그때 비토의 나이는 9살이었다. 아버지의 장례식 중 맏아들 파올로가 총에 맞아 죽고, 비토(Vito Corleone: 로버트 드니로 분)는 어머니의 죽음으로서 돈 치치오(Don Ciccio)에게서 겨우 도망쳐 나와 미국으로 건너온다. 대부로 성장한 후에 비토는 다시 치치오를 찾아 복수를 한다. 새롭게 등장한 젊은 대부 마이클(Don Michael Corleone: 알 파치노 분)은 본거지를 라스베가스로 옮기고 패밀리의 사업을 가능한한 합법적인 것으로 전환하려고 애쓴다. 이 과정에서 그를 제거하려는 음모에 부딪히고, 그는 치밀하고도 전격적인 일격으로 냉혹하게 반대파들을 제거하고 조직을 굳건하게 확대해 나간다. 이 과정에서 그는 배신한 형마저 죽이고, 아내와도 헤어지는 등 인간적으로는 점점 더 외로워져 간다. 또한, 그의 성장 과정과 대비시켜 아버지 비토 콜레오네가 시실리에서 양친을 잃고 미국으로 건너와 뒷골목 노동자에서 마피아의 보스로 성장하기까지의 경과를 함께 보여주고 있다. 냉정하고 치밀하기 그지없는 마이클과 인간적인 보스로 성장하는 과거의 비토와의 대조는 이 영화의 하이라이트이다.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=159863" class="link_txt">대부2</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1978.04.20</span></span>
+           
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://an2-img.amz.wtchn.net/image/v2/hCuwvIgXT0UdabIhsCy6Cg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qTXhNREV6T0RBME56VTJOelUzTlRBeEluMC5fbVp1Nzc4Tm1fc3U3MW1YaHhKSTZRVkd1UndDMks2dkdxdkxzQXlMTnFB"
+                        class="img_thumb" alt="12인의 성난 사람들">
+                      <span class="rank_num">5</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see15">15세이상관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=162386" class="link_story">
+                        정적이 감도는 법정. 침묵만이 사태의 심각성을 말해주고 있다. 한 소년의 살인사건에 관한 재판은 이제 최종 결정만을 남겨두고 있다. 스페인계로서 미국의 살고있는 18세의 소년이 자신의 친아버지를 예리한 나이프로 잔인하게 살해한 혐의로 이미 재판장은 소년의 유죄를 예상하는 분위기가 압도적이다. 최후의 판결을 앞둔 12명의 배심원들은 최종결정을 위한 회의에 소집되고, 자신의 결정에 관해 투표를 하게된다. 결과는 12면의 배심원중 1명을 제외한 11명 전원이 스페인계 미국소년을 유죄로 판결을 내린다. 유독 만장일치의 유죄결정을 반박하고 다른 배심원들의 회유에 맞서 완강히 자신의 의견을 내세우는 단 한 명의 배심원. 그는 사건의 정황을 미루어 볼 때 절대로 이 사건은 소년의 범죄가 아니라고 확신하고 끝까지 소년의 무죄를 주장한다. 이로 인해 나머지 배심원들과의 설전은 계속되고 그 소년은 무죄를 밝히기 위해 사건을 처음부터 되짚어 간다. 소년의 유죄를 확신하는 배심원들과 무죄를 밝히려는 그와의 대립이 점차 거칠어지자 배심원들은 일단 그의 주장을 들어보기로 하고, 사건은 새로운 국면으로 접어들기 시작한다. 시신에 있는 상처와 소년의 키를 비교하는 등 상황을 재현하면서 설득있고 논리적인 그의 주장은 계속되고, 배심원들의 시선을 집중시킨 그는 계속되는 반대파 배심원의 방해와 욕설에두 불구하고 사건의 진위를 조금씩 밝혀내기 시작하는데.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=162386" class="link_txt">12인의 성난 사람들</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1957.04.10</span></span>
+                 
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/ko/thumb/8/85/쉰들러_리스트_포스터.jpg/220px-쉰들러_리스트_포스터.jpg"
+                        class="img_thumb" alt="쉰들러 리스트">
+                      <span class="rank_num">6</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see15">15세이상관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=161806" class="link_story">
+                        1939년, 독일에게 점령당한 폴란드의 한 도시. 독일인 사업가이자 냉정한 기회주의자인 오스카 쉰들러는 유태인이 경영하는 그릇 공장 인수를 위해 수단과 방법을 아끼지 않는다. 인건비 없이 수백명의 유태인을 고용한 오스카 쉰들러는 우연히 유태인 회계사인 스턴과 가까워지고, 나치에 의해 참혹하게 학살되는 유태인들의 참혹한 실상을 마주하게 된다. 서서히 그의 양심이 흔들리기 시작하고, 마침내 강제 노동 수용소로부터 유태인들을 구하기로 결심한다. 그렇게 그는 자신이 구해낼 유태인 명단이 적힌 쉰들러 리스트를 만드는데…
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=161806" class="link_txt">쉰들러 리스트</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1994.03.05</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://mblogthumb-phinf.pstatic.net/20150303_113/gktjvl2_14253911925376Cm5H_JPEG/%C6%F7%BD%BA%C5%CD.jpg?type=w2"
+                        class="img_thumb" alt="반지의 제왕: 왕의 귀환">
+                      <span class="rank_num">7</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see12">12세이상관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=151655" class="link_story">모든 힘을 지배할 악의 군주 ‘사우론’의 절대반지가 깨어나고 악의 세력이 세상을 지배해가며 중간계는 대혼란에 처한다. 호빗 ‘프로도’와 그의 친구들, 엘프 ‘레골라스’, 인간 전사 ‘아라곤’과 ‘보로미르’ 드워프 ‘김리’ 그리고 마법사 ‘간달프’로 구성된 반지원정대는 평화를 지키기 위해 절대반지를 파괴할 유일한 방법인 반지가 만들어진 모르도르를 향해 목숨을 건 여정을 떠난다. 한편, 점점 세력을 넓혀온 사우론과의 피할 수 없는 전쟁을 앞둔 반지원정대는 드디어 거대한 최후의 전쟁을 시작하는데...
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=151655" class="link_txt">반지의 제왕: 왕의 귀환</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">2003.12.17</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://i.namu.wiki/i/7upYb9PSPIFk9HJBxIEKMCJee7M2hohPqsrFc56TdQQLP4UC2jhbYyb2gNFF7TLdQuu4NW45o5WEsKfSuwxsww.webp"
+                        class="img_thumb" alt="펄프 픽션">
+                      <span class="rank_num">8</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see19">청소년 관람불가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=164918" class="link_story">
+                        어느 식당에 두 남녀 건달(팀 로스, 아만다 플러머 분)이 손님을 상대로 강도행각을 벌이는 사건으로부터 영화는 시작된다. 암스테르담에서 돌아온 빈센트(존 트라볼타 분)는 동료 건달 쥴스(사무엘 L. 잭슨 분)와 함께 건달 두목 마르세러스(빙 라메스 분)의 금가방을 찾기 위하여 다른 건달이 사는 집으로 찾아간다. 건달들의 일상의 대화 속에 이들의 생활이 진솔하게 그려진다. 쥴스는 마르셀러스를 속인 일당을 죽일 때 성경 구절을 암송한다. 그러나 이 사건도 중간까지만 전개되고 다음의 에피소드로 넘어간다. 마르셀러스는 부치를 불러 5라운드에서 상대 선수에게 져 주라고 돈을 건네준다. 한편, 빈센트는 마르셀러스의 부탁으로 마르셀러스의 아내 미아와 저녁을 먹으러 갔다가 미아가 약물과다 복용으로 죽어가는 것을 천신만고의 노력으로 구해낸다. 부치는 어렸을 때 증조 할아버지로부터 물려 받은 시계의 내력에 관한 꿈을 꾸고는 마르셀러스와 맺은 약속을 지키기는 커녕 상대 선수를 때려 눕혀 결국 사망에까지 이르자 도망친다. 마르셀러스는 부치를 잡아오라고 명령을 내리고, 부치는 애인 화비안과 도망을 가려는 중 자신에게 남다른 사연과 내력이 있는 시계를 두고 온 것을 알고는 살던 아파트로 향한다. [스포일러] 아파트에는 빈센트가 부치를 잡으려고 잠복하고 있었는데, 부치는 운이 좋아 예상외로 쉽게 빈센트를 죽여 버린다.(결국 이 사건은 영화의 맨 마지막 장면 다음에 일어난 사건임을 알 수 있다. 이 영화의 매력적인 특이한 구성 구조로 인하여 이러한 사건의 순서가 가능하다) 부치는 화비안을 만나러 가다가 마르셀러스를 우연히 만나 쫓고 쫓기던 중 다른 변태 건달들에게 잡혀 수난을 당한다. 결국 부치가 마르셀러스를 구해 준 대가로 둘은 협정을 맺어 용서를 받고, 화비안과 함께 무사히 뒷골목의 건달 세계를 빠져 나간다. 빈센트와 쥴스는 마르셀러스의 금이 든 가방을 찾아오다가 그만 오발 사고로 사람을 죽여서 곤경에 처한다. 마르셀러스는 해결사 울프(하비 키이텔 분)를 보내 이들을 돕는다. 쥴스는 여러 곤경에서 살아 온 경험에서 신의 섭리를 느꼈다면서, 건달의 세계에서 손을 씻겠다고 다짐을 한다. 빈센트와 쥴스가 아침 식사를 하고 있는 식당에서 바로 영화의 첫 사전의 강도 행각이 벌어진다. 쥴스는 식당 강도인 풋내기 좀도둑 커플 하니버니와 펌킨을 붙잡아 훈계를 하고 풀어준다. 쥴스와 빈센트는 금가방을 가지고 마르셀러스에게 돌아간다.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=164918" class="link_txt">
+                        펄프 픽션</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1994.09.10</span></span>
+                   
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://mblogthumb-phinf.pstatic.net/MjAxODEwMDdfMTQx/MDAxNTM4ODY5ODMxMzI5.yxAl0aP4f9q9Z6_sb5LQOEods0UaYrR-kRGMxni-rnAg.La0qGPXqv25tVE0hxQtMwOpgXtMheAK8OhmjQ71JW9Ig.JPEG.karisma109/1.jpg?type=w800"
+                        class="img_thumb" alt="반지의 제왕: 반지 원정대">
+                      <span class="rank_num">9</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see12">12세이상관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=130429" class="link_story">
+                        모든 힘을 지배할 악의 군주 ‘사우론’의 절대반지가 깨어나고 악의 세력이 세상을 지배해가며 중간계는 대혼란에 처한다. 호빗 ‘프로도’와 그의 친구들, 엘프 ‘레골라스’, 인간 전사 ‘아라곤’과 ‘보로미르’ 드워프 ‘김리’ 그리고 마법사 ‘간달프’로 구성된 반지원정대는 평화를 지키기 위해 절대반지를 파괴할 유일한 방법인 반지가 만들어진 모르도르를 향해 목숨을 건 여정을 떠난다. 한편, 점점 세력을 넓혀온 사우론과의 피할 수 없는 전쟁을 앞둔 반지원정대는 드디어 거대한 최후의 전쟁을 시작하는데...
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=130429" class="link_txt">반지의 제왕: 반지 원정대</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">2001.12.31</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://image.yes24.com/goods/284047/XL"
+                        class="img_thumb" alt="석양의 무법자">
+                      <span class="rank_num">10</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see15">15세이상관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=149715" class="link_story">
+                        허리춤엔 총자루를 차고, 먼지가 뒤덮힌 망토를 두르고, 늘 시가를 입에 문채 우수에 찬 눈빚으로 서부를 가르는 신비의 남자 블런디. 미국의 남북전쟁이 한창인 때, 블런디는 멕시칸 총잡이 투코와 함께 동업 중이다. 투코는 현상범. 블런디는 그를 잡아 수많은 현상금을 얻어내고, 투코가 교수형을 당하는 순간, 어디에서인가 총성이 울린다. 이때 투코를 매달고 있던 밧줄이 끊어지고, 투코는 목숨을 건지는 것. 이런 방식으로 이들은 남서부 일대를 휘저으며 위험스런 게임을 해나간다. 한편 세텐자라 불리우는 가학적인 범죄자는 엄천난 게임판에 몰두한다. 그는 바로 $200,000의 돈주머니가 묻힌 비밀장소를 추적 중이다. 이때 투코와 블런디는 사막의 한가운데서 목숨을 담보로 실랑이를 벌인다. 블런디는 투코가 그를 배신하고 막 죽일려고 하는 순간, 우연히 그 돈주머니가 묻히 공동묘지를 알게 되고, 그만이 그 장소를 알고 있다. 투코는 그의 생명과 그의 위치에 대한 지식을 거래할 수 밖에 없는 노릇. 그들은 돈이 묻힌 곳에 달하기 위해 남부군복을 입고 나서지만, 불행스럽게도 북군의 포로가 되고, 수용소에서 아이러닉하게도 세텐자와 대면하게 된다. 장교로 이미 자리를 잡고 있는 세텐자는 투코를 고문해서 장소를 알아내려하지만, 블런디가 알고있다는 사실을 접하고는 블런디와 흥정에 들어간다. 이 위험스런 흥정은 가까스로 수용소를 빠져나온 투코가 합류하면서 더욱 뜨거워 지는데. 넘어서는 불가능한 여로와 죽음의 전쟁을 통하여 도달한 묘지에서, 운명의 3인은 최후의 방아쇠를 당기기 위해 삼각의 위치에 과감히 서서는 긴장의 순간을 맞이하는데.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=149715" class="link_txt">석양의 무법자</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1969.07.05</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://i.namu.wiki/i/saMOEMzfqa3uXEWUlSZp5P10X5Dxt8aWpSn9JqDVdeCLE3Wq3GkgIDNJGJEwOHXj2dNpmgA-X9uCvQVS5KSAmg.webp"
+                        class="img_thumb" alt="포레스트 검프">
+                      <span class="rank_num">11</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see12">12세관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=170006" class="link_story">
+                        불편한 다리, 남들보다 조금 떨어지는 지능을 가진 외톨이 소년 ‘포레스트 검프’ 헌신적이고 강인한 어머니의 보살핌과 콩깍지 첫사랑 소녀 ‘제니’와의 만남으로 사회의 편견과 괴롭힘 속에서도 따뜻하고 순수한 마음을 지니고 성장한다. 여느 날과 같이 또래들의 괴롭힘을 피해 도망치던 포레스트는 누구보다 빠르게 달릴 수 있는 자신의 재능을 깨닫고 늘 달리는 삶을 살아간다. 포레스트의 재능을 발견한 대학에서 그를 미식축구 선수로 발탁하고, 졸업 후에도 뛰어난 신체능력으로 군에 들어가 누구도 예상치 못한 성과를 거둬 무공훈장을 수여받는 등 탄탄한 인생 가도에 오르게 된 포레스트. 하지만 영원히 행복할 것만 같았던 시간도 잠시, 어머니가 병에 걸려 죽음을 맞이하고 첫사랑 제니 역시 그의 곁을 떠나가며 다시 한번 인생의 전환점을 맞이하게 되는데… 과연, 포레스트는 진정한 삶의 행복을 발견할 수 있을까? 진정한 삶의 가치와 의미를 제시하는 감동 바이블! 올 가을, 다시 한번 세상에서 가장 눈부신 달리기가 시작된다! “Run! Forrest Run!”
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=170006" class="link_txt">포레스트 검프 </a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1994.10.15</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://play-lh.googleusercontent.com/6xQIBZkJGuCjkQxQX7kDALLmEwAWzz6DTkZ4VR7DWMl6xzD8RFEPqfvS1AHj7nvaVdDD"
+                        class="img_thumb" alt="파이트 클럽">
+                      <span class="rank_num">12</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see19">청소년 관람불가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=163641" class="link_story">
+                        비싼 가구들로 집 안을 채우지만 삶에 강한 공허함을 느끼는 자동차 리콜 심사관 ‘잭’. 거부할 수 없는 매력의 거친 남자 ‘테일러 더든’과의 우연한 만남으로 본능이 이끄는 대로 삶을 살기로 결심한다. 어느 날, “싸워봐야 네 자신을 알게 된다”라는 테일러 더든의 말에 통쾌한 한 방을 날리는 잭. 두 사람은 여태껏 경험해보지 못한 강렬한 카타르시스를 느끼며 ‘파이트 클럽’이라는 비밀 조직을 결성하고, 폭력으로 세상에 저항하는 거대한 집단이 형성된다. 하지만, 걷잡을 수 없이 커진 ‘파이트 클럽’은 시간이 지날수록 의미가 변질되고, 잭과 테일러 더든 사이의 갈등도 점차 깊어져 가는데…
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=163641" class="link_txt">파이트 클럽</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1999.11.13</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/c1lg/image/Tvv8nCH5NqDzpVTRj91IzG4KIuM.jpg"
+                        class="img_thumb" alt="반지의 제왕: 두 개의 탑">
+                      <span class="rank_num">13</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see12">12세관람가</span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=10684" class="link_story">
+                        모든 힘을 지배할 악의 군주 ‘사우론’의 절대반지가 깨어나고 악의 세력이 세상을 지배해가며 중간계는 대혼란에 처한다. 호빗 ‘프로도’와 그의 친구들, 엘프 ‘레골라스’, 인간 전사 ‘아라곤’과 ‘보로미르’ 드워프 ‘김리’ 그리고 마법사 ‘간달프’로 구성된 반지원정대는 평화를 지키기 위해 절대반지를 파괴할 유일한 방법인 반지가 만들어진 모르도르를 향해 목숨을 건 여정을 떠난다. 한편, 점점 세력을 넓혀온 사우론과의 피할 수 없는 전쟁을 앞둔 반지원정대는 드디어 거대한 최후의 전쟁을 시작하는데...
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=10684" class="link_txt">반지의 제왕: 두 개의 탑</a></strong>
+                    <span class="txt_info">
+                 <span class="info_txt">개봉<span class="txt_num">2002.12.19</span></span>
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://an2-img.amz.wtchn.net/image/v2/0Ba--10sE_nb_EyG_zMk-A.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk56STVlREV3T0RCeE9EQWlYU3dpY0NJNklpOTJNaTl6ZEc5eVpTOXBiV0ZuWlM4eE5qTXhNek16TXpBMU1Ua3dOVFUyT1RRMEluMC50TWhUMklGcUxrVzJTMmtwckdVajNld3J0V1M1c21IWEtzcGZyaDhfUFFB"
+                        class="img_thumb" alt="인셉션">
+                      <span class="rank_num">14</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see12">12세이상관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=160385" class="link_story">
+                        타인의 꿈에 들어가 생각을 훔치는 특수 보안요원 코브. 그를 이용해 라이벌 기업의 정보를 빼내고자 하는 사이토는 코브에게 생각을 훔치는 것이 아닌, 생각을 심는 ‘인셉션’ 작전을 제안한다. 성공 조건으로 국제적인 수배자가 되어있는 코브의 신분을 바꿔주겠다는 거부할 수 없는 제안을 하고, 사랑하는 아이들에게 돌아가기 위해 그 제안을 받아들인다. 최강의 팀을 구성, 표적인 피셔에게 접근해서 ‘인셉션’ 작전을 실행하지만 예기치 못한 사건들과 마주하게 되는데… 꿈 VS 현실 시간, 규칙, 타이밍 모든 것이 완벽해야만 하는, 단 한 번도 성공한 적 없는 ‘인셉션’ 작전이 시작된다!
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=160385" class="link_txt">인셉션</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">2010.07.21</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://play-lh.googleusercontent.com/99-9NzWK-qhtYBFhr08qIw4AU-q2ziYUH3gIfqg7rEcYWSear_Rqi2yXyOEsAgw7okXc"
+                        class="img_thumb" alt="스타워즈: 제국의 역습">
+                      <span class="rank_num">15</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see ">전체관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=160560" class="link_story">
+                        아주 먼 옛날 은하계 저편에...(A long time ago in a galaxy far, far away...) 반란군(Rebellion)으로써는 암담한 시기. 죽음의 별(Death Star)을 파괴하는 데는 성공하였지만, 제국군(Imperial)은 반란군을 은하계 막다른 곳으로 몰아냈다. 루크 스카이워커(Luke Skywalker)가 이끄는 자유의 투사(Freedom Fighters)들은 제국의 무서운 스타함대(Starfleet)을 피하여 얼음으로 뒤덮인 호스(Hoth) 행성에 새로운 비밀 기지를 마련했다. 젊은 스카이워커를 찾으려고 혈안이 된 간악한 악의 군주(Evil Lord) 다스 베이더(Darth Vader) 총통은 우주의 구석 구석에 수천의 원격조종 탐색선(Remote Probes)을 보냈다. 비록 죽음의 별은 폭파시켰지만, 수와 무기에 있어서 열세인 반란군은 제국군에게 밀려서 우주의 변방인 얼음의 혹성에서 재기의 기회를 노리고 있었다. 정찰에 나섰다가 얼음속에 사는 괴물에게 납치되어 다시 구출되는 과정에서 루크는 제다이 기사단의 스승 요다를 찾아가 제다이 수업을 받으라는 지시를 받는다. 스카이워커를 찾으려는 제국은 우주의 곳곳에 탐색 장치를 떨어뜨려놓는데, 결국 얼음의 혹성이 제국에게 발각된다. 마침내 거대한 다리로 걸어다니는 마치 불을 뿜는 공룡과 같은 스노우 워커를 앞세운 제국의 반격이 개시된다. 우세한 제국에 밀린 반란군은 직결 지점에서 만나기로 하고 뿔뿔이 흩어진 채로 간신히 퇴각에 성공한다. 루크는 제다이 기사이자 철학자이면서 8백살이 넘는 나이를 가진 요다가 있는 습지대의 혹성 다고바로 가서 그에게서 철저한 훈련을 받으며 제다이로서의 기량을 갖추고자 애쓴다. 한편, 자바를 찾아 떠나려다 실종되었던 루크를 구출하느라 머물고 있던 솔로는 레이아 공주가 기지에 갇히는 바람에 퇴각하는 수송선에 오르지 못하자, 그녀를 데리고 겨우 팰콘에 오른다. 하지만 미쳐 팰콘의 고속 추진기를 고치지못한 관계로 광속을 낼 수 없어 제국의 끈질긴 추적을 계속 받는다. 제국의 추적에 위험이 계속되는 솔로 일행은 우주의 온갖 암석들이 밀집된 소혹성군(Asteroid)으로 들어가 뒤쫓아오는 제국의 추적기 4대 중 2대가 암석과 부딪쳐 폭발된다. 그리고 다시, 거대한 암석의 계곡으로 들어가 납작한 팰콘과 좁은 지형을 이용, 뒤따라오던 나머지 두 대도 폭발시킨다. 그리고 그 별의 구멍 속으로 피신한다. 그곳에서 팰콘을 수리하지만 무언가 이상함을 느낀 솔로는 자신이 착륙한 곳이 바로 동굴에 사는 뱀처럼 생긴 거대한 우주 괴물의 입 속이었다. 간신히 괴물에게서 탈출하지만, 다시 끈질기게 암석들을 부수며 별무리속을 뚫고 쫓아오는 제국 함대의 공격을 받자 솔로는 기지를 발휘, 함대에 뒷편에 붙어서 숨는다. 그리고 그의 예상대로 함대가 광속 추진을 하기전 쓰레기를 버릴 때 함께 떨어져 나온다. 함대는 광속으로 순간적으로 멀리 가고, 솔로는 근처에 있는 옛 친구 랜도 칼리시안이 관리하는 구름의 도시를 찾아가는데.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=160560" class="link_txt">스타워즈: 제국의 역습</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1997.04.26</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://file.daesoon.org/webzine/39/85_웹이미지_050.jpg"
+                        class="img_thumb" alt="매트릭스">
+                      <span class="rank_num">16</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see12">12세관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=160560" class="link_story">
+                        인간의 기억마저 AI에 의해 입력되고 삭제 되는 세상.진짜보다 더 진짜 같은 가상 현실 ‘매트릭스’ 그 속에서 진정한 현실을 인식할 수 없게 재배되는 인간들. 그 ‘매트릭스’를 빠져 나오면서 AI에게 가장 위험한 인물이 된 '모피어스’는 자신과 함께 인류를 구할 마지막 영웅 ‘그’를 찾아 헤맨다. 마침내 ‘모피어스’는 낮에는 평범한 회사원으로, 밤에는 해커로 활동하는 청년 ‘네오’를 ‘그’로 지목하는데… 꿈에서 깨어난 자들, 이제 그들이 만드는 새로운 세상이 열린다!
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=160560" class="link_txt">매트릭스</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1999.05.15</span></span>
+                   
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://mblogthumb-phinf.pstatic.net/20151010_45/yessok104_1444470645093Y8lTE_JPEG/display.jpg?type=w2"
+                        class="img_thumb" alt="좋은 친구들">
+                      <span class="rank_num">17</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see19 ">청소년관람불가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=160560" class="link_story">
+                        아일랜드계 이탈리아인 헨리 힐(레이 리오타)와 토미(조 페시)는 열 세살에 마피아에 입문해 갱인 지미(로버트 드 니로)와 함께 트럭이나 공항 화물을 훔치는 일을 한다. 결혼 후에도 마피아 생활을 계속하는 헨리는 이제 조직에서도 안정된 위치와 경제적 여유를 갖는다.
+
+어느날 헨리는 지미와 함께 폴리의 마약 심부름을 하다 FBI의 추적을 받고 체포되지만 곧 풀려난다. 경찰서에서 나오자마자 헨리와 지미는 공항터미널 사건을 모의해 현금 6백만 달러라는 엄청한 돈을 훔친다. 이 사건을 은폐하기 위해 혈안이 된 지미는 모의에 참여했던 사람들을 죽이고, 토미는 마피아 조직에 가담했다가 살해당한다.
+
+엎친데 덮친격으로 헨리마저 마약거래로 경찰서에 잡혀 들어가는데...
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=160560" class="link_txt">좋은 친구들</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1991.02.14</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://t1.daumcdn.net/thumb/R720x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/9gMa/image/TLYk5yLCe9LkIKzdWYacSk91hQw.jpg"
+                        class="img_thumb" alt="뻐꾸기 둥지 위로 날아간 새">
+                      <span class="rank_num">18</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see15">15세관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=160560" class="link_story">범죄자인 맥머피(Randle Patrick McMurphy: 잭 니콜슨 분)는 교도소에서 정신 병원으로 후송된다. 정신 병원이 감옥보다는 자유로울 것으로 생각했던 맥머피는 전혀 그렇지 않다는 것을 깨닫는다. 정신 병원에 수감되어 있는 하딩(Harding: 윌리암 레드필드 분), 마티니(Martini: 대니 드비토 분), 체스윅(Cheswick: 시드니 래식 분), 빌리(Billy Bibbit: 브래드 듀리프 분), 데버(Taber: 크리스토퍼 로이드 분), 시멜로, 추장(Chief Bromden: 윌 샘프슨 분), 프레데릭슨(Frederickson: 빈센트 쉬아벨리 분) 등과 생활하면서 맥머피는 그들이 겉으로는 전혀 문제가 없어 보이지만 보이지 않는 병원내의 압력에 의해 짓눌려 사는 죽은 인간들임을 간파한다. 그리고 그러한 압력의 주범이 레취드(Nurse Ratched: 루이스 플레쳐 분) 간호원임을 알게 된다. 맥머피는 환자들을 끌고 병원을 빠져나가 낚시를 다녀오거나 파티를 여는 등 의도적인 반항을 시도하지만 레취드 간호원으로 대표되는 병원내의 시스템이 너무나 막강하다는 것을 꺼닫고 탈출을 결심하게 된다.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=160560" class="link_txt">뻐꾸기 둥지 위로 날아간 새</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1977.09.17</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://t1.daumcdn.net/cfile/tistory/221DC04D55E1E40933"
+                        class="img_thumb" alt="세븐">
+                      <span class="rank_num">19</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see19">청소년관람불가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=160560" class="link_story">
+                       은퇴를 7일 앞둔 관록의 형사 윌리엄 소머셋(모건 프리먼)과 새로 전근 온 신참내기 형사 밀스(브래드 피트)가 팀이 된 바로 다음날, 강압에 의해 위가 찢어질 때까지 먹다가 죽은 초고도 비만 남자와 역시 강압에 의해 식칼로 자기 살을 베어내 죽은 악덕 변호사의 사건과 마주한다.
+
+‘식탐’, ‘탐욕’… 그리고 ‘나태’, ‘분노’, ‘교만’, ‘욕정’. ‘시기’
+윌리엄 소머셋은 현장에 남은 흔적들로 기나긴 연쇄 살인이 시작되었음을 직감하고 성서의 7가지 죄악을 따라 발생하는 사건들을 추적하기 시작하는데...
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=160560" class="link_txt">세븐</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">1995.11.11</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item_poster">
+                  <div class="thumb_item">
+                    <div class="poster_movie">
+                      <img
+                        src="https://i.namu.wiki/i/qjY5aTo_dB5pG16YGfWHBkpDovwTEVipw-c9U9TLFTo13UeKnngNXWSzHpNZz-C_-kUJ8su9_8NdGILowHpC2A.webp"
+                        class="img_thumb" alt="7인의 사무라이">
+                      <span class="rank_num">20</span>
+                      <span class="txt_tag">
+                        <span class="ico_movie ico_see see15 ">15세관람가</span>
+                      </span>
+                    </div>
+                    <div class="poster_info">
+                      <a href="/moviedb/main?movieId=160560" class="link_story">
+                        때는 전국시대, 끊이지 않는 전란(戰亂)이 만들어낸 '노부시'(野武士: 산적 무리)의 횡포에 백성들이 떨고있던 그때.. 주민들은 황폐한 땅에서 어렵게 수확한 식량으로 한해 한해를 넘기는 빈촌에 살고 있다. 이 빈촌엔 보리 수확이 끝날 무렵이면 어김없이 산적들이 찾아와 모든 식량을 모조리 약탈해 간다. 싸워도 애원해도 소용이 없었다. 가만히 있을 수만은 없던 촌장의 결단으로 사무라이들을 모집하는데, 이들은 풍부한 전쟁 경험을 가진 감병위(勘兵衛)를 포함한 7명이었다. 감병위의 지휘하에 마을은 방위태세를 갖추고 전투훈련도 시작한다. 이윽고 산적들의 공격이 시작되어 치열한 사투가 벌어지고 산적들은 전멸한다. 하지만 마을사람들 다수와 7명 중 4명의 사무라이도 목숨을 잃는다. 마을엔 평화가 찾아오고 주민들은 벼농사에 여념이 없다. 노동요를 부르는 백성들을 보면서 감병위는 이렇게 말한다. "또.. 살아남았구나.. 이번도 또, 진 싸움이였구나.. 이긴 것은 저 농부들이다. 우리들이 아니야"
+                      </a>
+                    </div>
+                  </div>
+                  <div class="thumb_cont">
+                    <strong class="tit_item"><a href="/moviedb/main?movieId=160560" class="link_txt">7인의 사무라이</a></strong>
+                    <span class="txt_info">
+                      <span class="info_txt">개봉<span class="txt_num">2004.04.16</span></span>
+                     
+                    </span>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </article>
+    </main>
+
+
+
+
+   
+    <hr class="hide">
+
+    <footer class="kakao_foot" data-tiara-layer="footer">
+      <div class="inner_foot" data-cloud="pc_news_footer">
+        <div class="direct_link">
+          <h2 class="screen_out">바로가기</h2>
+          <div class="direct_bundle">
+            <div class="item_bundle">
+         
+            </div>
+            <div class="item_bundle">
+             
+            </div>
+            <div class="item_bundle">
+     
+            </div>
+            <div class="item_bundle"></div>        
+            
+          </div>
+        </div>      
+        <div class="footer_link">        
+        </div>
+        <div class="footer_link">        
+        </div>
+        <div class="info_copyright">
+          <small class="txt_copyright">Copyright © masterpiece. All rights reserved.</small>
+        </div>
+        <a href="javascript:" class="btn_top" data-tiara-layer="top_button"><span class="inner_top"><span
+              class="ico_movie ico_top"></span></span>TOP</a>
+      </div>
+    </footer>
+    <script src="//t1.daumcdn.net/media/kraken/movie/386a1cd/PcRankingBoxOfficeWeeklyBundle.merged.js"></script>
+
+    <script src="//t1.daumcdn.net/media/kraken/movie/386a1cd/PcCommonEventBundle.merged.js"></script>
+  </div>
+
+</body>
+
+</html>
